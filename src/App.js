@@ -34,7 +34,7 @@ class Test extends React.Component {
     clearInterval(countdownID);
 
     if(gameMode === 0) {           // Mode is word count
-      for(let i = 0; i < Math.floor(wordCount * 2); i++) {
+      for(let i = 0; i < wordCount * 2; i++) {
         r = Math.floor(Math.random() * words.length);
         tempTest += words[r];
         tempTest += ' ';
